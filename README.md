@@ -1,16 +1,30 @@
-# React + Vite
+# task-front
+Aplicación web para la gestión de tareas, desarrollada con React y Vite. Implementa un CRUD completo consumiendo una API RESTful. Utiliza Tailwind CSS para el diseño y Axios para las peticiones HTTP. Interfaz intuitiva con estados de carga y manejo de errores.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Capturas
+![Task App](./screenshots/screenshot01.png)
 
-Currently, two official plugins are available:
+---
+## 🛠️ Tecnologías
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Tecnología | Descripción |
+| :--- | :--- |
+| **React** | Librería de UI |
+| **Vite** | Empaquetador |
+| **Tailwind CSS** | Estilos |
+| **Axios** | Peticiones HTTP |
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instalación
+```bash
+npm install
+```
+## Ejecutar
+```bash
+npm run dev
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Variables de entorno
+Crea un archivo `.env` en la raíz del proyecto con:
+VITE_API_URL= `https://task-api-qt09.onrender.com/api/tareas`
